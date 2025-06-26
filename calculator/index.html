@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scientific Calculator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-blue-200 to-indigo-300 min-h-screen flex items-center justify-center">
+  <div class="bg-black p-6 rounded-3xl shadow-2xl w-[360px]">
+    
+    <!-- Display -->
+    <div id="display"
+         class="text-right text-2xl font-mono text-black bg-green-200 p-4 rounded-md mb-4 h-16 overflow-y-auto shadow-inner border-2 border-green-500">
+      0
+    </div>
+
+    <!-- Scientific Functions -->
+    <div class="grid grid-cols-5 gap-2 text-sm text-white mb-3">
+      <button class="btn-func">sin</button>
+      <button class="btn-func">cos</button>
+      <button class="btn-func">tan</button>
+      <button class="btn-func">log</button>
+      <button class="btn-func">ln</button>
+
+      <button class="btn-func">√</button>
+      <button class="btn-func">^</button>
+      <button class="btn-func">π</button>
+      <button class="btn-func">e</button>
+      <button class="btn-func">(</button>
+
+      <button class="btn-func">)</button>
+      <button class="btn-func">%</button>
+      <button class="btn-clear bg-red-500 text-white">C</button>
+      <button class="btn-del bg-yellow-400 text-black">⌫</button>
+      <button class="btn-op bg-blue-500">/</button>
+    </div>
+
+    <!-- Digits and Operators -->
+    <div class="grid grid-cols-4 gap-2 text-lg text-white">
+      <button class="btn">7</button>
+      <button class="btn">8</button>
+      <button class="btn">9</button>
+      <button class="btn-op bg-blue-500">*</button>
+
+      <button class="btn">4</button>
+      <button class="btn">5</button>
+      <button class="btn">6</button>
+      <button class="btn-op bg-blue-500">-</button>
+
+      <button class="btn">1</button>
+      <button class="btn">2</button>
+      <button class="btn">3</button>
+      <button class="btn-op bg-blue-500">+</button>
+
+      <button class="btn col-span-2">0</button>
+      <button class="btn">.</button>
+      <button class="btn-equal bg-green-500 text-white col-span-1">=</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
