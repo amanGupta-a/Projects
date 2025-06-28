@@ -1,4 +1,4 @@
-const API_KEY = "fc5ddfe979b61ad096950bb306a6dcaa";
+const API_KEY = "//add key id";
 const weatherDiv = document.getElementById("weather");
 
 function fetchWeather(lat, lon) {
